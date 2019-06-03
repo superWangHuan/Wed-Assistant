@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/wedHome/main",
+    "pages/feedback/main",
+    "pages/partner/main",
+    "pages/task/main",
+    "pages/taskAdd/main",
+    "pages/wedBook/main",
+    "pages/accountEdit/main",
+    "pages/budget/main",
+    "pages/budgetAccount/main",
+    "pages/budgetLists/main",
+    "pages/myGuests/main",
+    "pages/guestsQRCode/main",
+    "pages/predivPage/main",
+    "pages/waitingArrangement/main",
+    "pages/addTable/main",
+    "pages/peopleLists/main"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FF4463",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "免费婚礼助手",
+    "backgroundTextStyle": "light"
+  }
+}

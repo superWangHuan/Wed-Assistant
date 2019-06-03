@@ -1,0 +1,149 @@
+.container{
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+    background:white;
+}
+.task-add{
+    width:100%;
+}
+.task-content{
+    width:100%;
+    height:110rpx;
+    border-bottom:1rpx solid #EEEEEE;
+}
+.task-content input{
+    width:100%;
+    height:100%;
+    padding-left:35rpx;
+}
+.place-holder{
+    font-size:16px;
+    color:#676767;
+}
+.matter{
+    width:100%;
+    height:120rpx;
+    display:flex;
+    align-items: center;
+}
+.matter text{
+    font-size:15px;
+    font-weight:bold;
+    margin-left:35rpx;
+}
+.matter-content{
+    width:100%;
+}
+.principal-box,.finish-box,.delete-box{
+    width:90%;
+    height:100rpx;
+    margin:0 auto;
+}
+.principal,.finish,.delete{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pri-icon{
+    width:10rpx;
+    height:10rpx;
+    border-radius:100%;
+    overflow: hidden;
+    background:#FFC86D;
+}
+.principal-btn,.fin-time,.delete-btn{
+    width:90%;
+    height:100%;
+    border-bottom:1rpx solid #EEEEEE;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.principal-text,.finish-text,.delete-text{
+    font-size:12px;
+    width:70%;
+    height:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.switch{
+    width:140rpx;
+    height:40rpx;
+    background:#EEEEEE;
+    border-radius:8rpx;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.btn{
+    width:49%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius:8rpx;   
+    font-size:12px;
+    color:#666666;
+}
+.active{
+    background:#FF4463;
+    color:white;
+}
+.fin-icon{
+    width:10rpx;
+    height:10rpx;
+    border-radius:100%;
+    overflow: hidden;
+    background:#FF4463;
+}
+.time-select{
+    width:250rpx;
+    height:40rpx;
+    text-align: right;
+}
+.time-select text{
+    font-size:12px;
+    color:#999999;
+}
+.submit-btn{
+    width:100vw;
+    height:90rpx;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+.submit-btn button{
+    width:100%;
+    height:90rpx;
+    background:#FF4463;
+    font-size:14px;
+    color:white;
+    line-height: 90rpx;
+    border-radius: 0;
+    border:0;
+    outline: none;
+}
+.delete-icon{
+    width:30rpx;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.delete-hidden{
+    display:none
+}
+.hide{
+    opacity: 0;
+    transition:all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+.show{
+    opacity:1;
+    transition:all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}

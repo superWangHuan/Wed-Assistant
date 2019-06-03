@@ -1,0 +1,103 @@
+
+.container{
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+    /* background:white; */
+}
+.set-budget{
+    width:100%;
+    height:100%;
+    background:white;
+}
+.set-budget-top{
+    width:100%;
+    height:70%;
+    background-color:white;
+}
+.set-budget-box{
+    width:100%;
+    height:100%;
+    background:url('https://wxappstatic.wed114.co/wedTools/pic/budget/back@2x.png') no-repeat;
+    background-color:white;
+    background-size:contain;  
+    position: relative;  
+}
+.budget-img {
+    position:absolute;
+    top:20vw;
+    left:calc(50% - 22vw);
+    width:44vw;
+    height:60vw;
+    background:url(https://wxappstatic.wed114.co/wedTools/pic/budget/person@2x.png) no-repeat;
+    background-size:100%;
+    }
+/* .budget-img image{
+    width:100%;
+    height:auto;
+} */
+.input-box{
+    width:100%;
+    height:80rpx;
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    top:680rpx;
+    left:0;
+}
+.input-inner{
+    width:360rpx;
+    height:100%;
+    background:white;
+    border-radius:40rpx;
+    overflow: hidden;
+    padding:0 30rpx;
+    text-align: center;
+}
+.input-inner input{
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+.placeholder-font{
+    color:#B2B2B2;
+    text-align:center;
+}
+.set-budget-bottom{
+    width:100%;
+    height:30%;
+}
+.submit-budget-box{
+    width:100%;
+    height:100%;
+    background:url('https://wxappstatic.wed114.co/wedTools/pic/budget/star@2x.png') no-repeat;
+    background-size: contain;
+    background-position:bottom;
+    position: relative;
+}
+.btn-box{
+    width:100%;
+    height:80rpx;
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    top:100rpx;
+    left: 0;
+}
+.btn-inner{
+    width:360rpx;
+    height:100%;
+    background:#FF5754;
+    border-radius:40rpx;
+    overflow: hidden;
+    padding:0 30rpx;
+    box-shadow: 0 3rpx 10rpx 2rpx rgb(245, 136, 134);
+}
+.btn-box .btn-inner .btn{
+    width:100%;
+    height:100%;
+    border:0;
+    outline:none;
+    color:white;
+    background:#FF5754;
+}

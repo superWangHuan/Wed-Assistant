@@ -1,0 +1,292 @@
+
+  .icon-iphone:before {
+    content: "\e620";
+  }
+  
+  .icon-right:before {
+    content: "\e625";
+  }
+  
+  .icon-gou:before {
+    content: "\e647";
+  }
+  
+  .icon-jianhao:before {
+    content: "\eaf5";
+  }
+
+.hide{
+    display:none;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    background:white;
+}
+.task{
+    width:100%;
+    height:100%;
+}
+.task-top{
+    width:100%;
+    height:19vh;
+    background:#FF4463;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.task-top-inner{
+    width:80%;
+    height:90%;
+}
+.task-title{
+    width:100%;
+    height:70rpx;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+}
+.task-title text{
+    color:white;
+}
+.task-plan{
+    width:100%;
+    height:120rpx;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.task-plan-num{
+    width:100%;
+    height:20rpx;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+.task-plan-num text{
+    color:#FFA6B2;
+    font-size:12px;
+}
+.task-progress-bar{
+    width:100%;
+    height:8rpx;
+}
+.addition{
+    width:100%;
+    height:20rpx;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+.addition text{
+    color:#FFA6B2;
+    font-size:10px;
+}
+
+.task-bottom{
+    width:100%;
+    height:80vh;
+}
+.task-nav{
+    width:100%;
+    height:81rpx;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;  
+    border-top:1rpx solid #EEEEEE;
+    border-bottom:1rpx solid #EEEEEE;  
+}
+.nav-item{
+    width:30%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;    
+}
+.nav-item text{
+    font-size:13px;
+    color:rgb(119, 119, 119);
+}
+/* 显示当前页标记 */
+.active:after{
+    display:"div";
+    content:"";
+    width:40rpx;
+    height:0rpx;
+    border-bottom:5rpx solid #FF4463;
+    position: absolute;
+    bottom:0;
+    left:calc(50% - 20rpx);
+}
+
+
+.task-list{
+    width:100%;
+    height:calc(80vh - 83rpx);
+}
+.task-list swiper-item{
+    width:100%;
+    height:100%;
+}
+.task-list swiper-item scroll-view{
+    width:100%;
+    height:100%;  
+}
+.task-list-box{
+    width: 100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+}
+.task-item-class{
+    width:95%;
+}
+.task-item-title{
+    height:60rpx;
+}
+
+.task-item{
+    width:100%;
+    height:120rpx;
+    display:flex;
+    align-items: center; 
+    justify-content: space-between;
+    position: relative;
+}
+.myIcon{
+    position: absolute;
+    top:0;
+    right:0;
+    width:60rpx;
+    height:30rpx;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 8rpx;
+    border-bottom-left-radius: 8rpx;
+    overflow: hidden;
+}
+.myIcon text{
+    font-size:8px;
+    color:white;
+    text-align: center;
+    width:100%;
+    height:100%;
+    background:#FFBE3E;
+    line-height:35rpx;
+}
+.task-item-title text{
+    line-height:80rpx;
+    font-size:14px;
+}
+.task-icon{
+    width:30rpx;
+    height:30rpx;
+    border:1rpx solid #CDCDCD;
+    border-radius:100%;
+    background-color:white;
+    margin-left:20rpx;
+    overflow:hidden;
+}
+.task-icon-inner{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;   
+    background:#CDCDCD; 
+}
+.task-icon-inner text{
+    font-size:8px;
+    color:white;
+    font-weight: 600;
+}
+.task-cont{
+    width:calc(100% - 80rpx);
+    height:70rpx;
+    margin-left:20rpx;
+    border-bottom:1rpx solid #CDCDCD;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-cont .content{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.task-cont .content text{
+    font-size:13px;
+    line-height:60rpx;
+    white-space: nowrap;
+}
+.task-time{
+    width:200rpx;
+    height:60rpx;
+}
+.task-cont .task-time text{
+    font-size:12px;
+    color:#999999;
+}
+.task-add-btn{
+    width:90rpx;
+    height:90rpx;
+    border-radius: 100%;
+    background:#FF4463;
+    overflow: hidden;
+    position: fixed;
+    bottom:50rpx;
+    left:calc(50% - 40rpx);
+    box-shadow:0 5rpx 8rpx 2rpx rgb(167, 167, 167);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.task-add-btn text{
+    text-align: center;
+    color:white;
+    font-size:15px;
+    font-weight: 600;
+}
+.iconHidden{
+    display:none;
+}
+.nothing{
+    width:100%;
+    height:80%;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.notTitle{
+    width:300rpx;
+    height:370rpx;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.not-icon{
+    width:270rpx;
+    height:270rpx; 
+}
+.not-icon image{
+    width:270rpx;
+    height:270rpx; 
+}
+.notTitle .nottitle{
+    width:270rpx;
+    height:100rpx;    
+    text-align: center;
+    margin-top:15rpx;
+}
+.notTitle .nottitle text{
+    font-size:12px;
+    color:#a5a5a5;
+}
+.notHidden{
+    display:none;
+}

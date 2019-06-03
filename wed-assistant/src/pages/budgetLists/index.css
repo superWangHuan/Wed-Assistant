@@ -1,0 +1,242 @@
+
+.container{
+    width:100vw;
+    background:white;
+}
+.budget{
+    width:100%;
+}
+.budget-top{
+    width:100%;
+    height:300rpx;
+    background:#FF4463;
+}
+.budget-top::before{
+    display:table;
+    content:"";
+}
+.budget-top-box{
+    width:95%;
+    height:190rpx;
+    margin:30rpx auto 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.budget-top-left{
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.budget-top-title{
+    font-size: 12px;
+    color:#FFA4B4;
+}
+.bduget-top-price{
+    font-size:25px;
+    color:white;
+}
+.budget-top-right{
+    width:50%;
+    height:100%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbudget text{
+    font-size:12px;
+    color:white;
+    line-height: 190rpx;
+}
+.budget-bottom{
+    width:100%;
+    min-height:calc(100vh - 300rpx);
+    background:#F4F4F4;
+    position: relative;
+    padding-bottom:50rpx;
+}
+.budget-bottom::before{
+    display:table;
+    content:"";
+}
+.summarize{
+    width:90%;
+    height:200rpx;
+    background:white;
+    border-radius:10rpx;
+    overflow: hidden;
+    position: absolute;
+    top:-50rpx;
+    left:5%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    box-shadow: 0 10rpx 10rpx 1rpx rgb(190, 190, 190);
+}
+.summarize-box{
+    width:90%;
+    height:90%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cake{
+    width:35%;
+    height:100%;
+}
+.canvas{
+    width:190rpx;
+    height:180rpx;
+    transition: all 500ms;
+}
+.proportion{
+    min-width:60%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.proportion-box{
+    width:95%;
+    height:90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wedexpense text{
+    margin-right: 10rpx;
+    width:70rpx;
+    font-size:12px;
+    color:#6F6F6F;
+    text-align: center;
+    white-space:nowrap;
+}
+.wedexpense text.wtitle{
+    margin-right: 10rpx;
+    width:100rpx;
+    font-size:12px;
+    color:#6F6F6F;
+    text-align: left;
+    white-space:nowrap;
+    overflow:hidden;
+    text-align: center;    
+}
+.wedexpense text:last-child{
+    margin-right: 10rpx;
+    min-width:100rpx;
+    font-size:12px;
+    color:#6F6F6F;
+    text-align: left;
+    white-space:nowrap;
+}
+
+.icon-dian{
+    width:10rpx;
+    height:10rpx;
+    margin-right:20rpx;
+}
+.wed-box{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.proportion-box .wedexpense:nth-child(1) .icon-dian{
+    background:#4ED4FC;
+    border-radius:100%;
+    overflow: hidden;
+}
+.proportion-box .wedexpense:nth-child(2) .icon-dian{
+    background:#F877AC;
+    border-radius:100%;
+    overflow: hidden;
+}
+.proportion-box .wedexpense:nth-child(3) .icon-dian{
+    background:#FAC925;
+    border-radius:100%;
+    overflow: hidden;
+}
+.expense{
+    width:100%;
+    margin:180rpx auto 0;
+}
+.expense-inner{
+    width:100%;
+    background:white;
+}
+.expense-box{
+    width:90%;
+    margin:0 auto 30rpx;
+}
+.e-image{
+    width:50%;
+    display:flex;
+    align-items: center;
+}
+.e-image image{
+    width:50rpx;
+    height:50rpx;
+}
+.p-title{
+    width:100%;
+}
+.p-title text{
+    font-size:14px;
+    color:#A8A8A8;
+    line-height: 80rpx;
+}
+.opt-expense{
+    width:100%;
+    height:80rpx;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.c-title text{
+    margin-left:20rpx;
+    font-size:11px;
+    line-height:80rpx;
+}
+.pricetext{
+    width:35%;
+    height:80rpx;
+    display:flex;
+    align-items: center;
+}
+.pricetext text{
+    font-size:15px;
+    color:#FF4463;
+    line-height:80rpx;
+}
+.edit{
+    width:5%;
+}
+.pricetext input{
+    height:80rpx;
+    font-size:15px;
+    color:#FF4463;
+}
+.modify-project{
+    width:100%;
+    height:57rpx;
+    margin:20rpx 0 0 0;
+    position: fixed;
+    left:0;
+    bottom:15rpx;
+}
+.modify-project .modify-project-btn{
+    width:200rpx;
+    height:100%;
+    background:#FF4463;
+    border-radius:27rpx;
+    overflow: hidden;
+    margin:0 auto;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:13px;
+
+}

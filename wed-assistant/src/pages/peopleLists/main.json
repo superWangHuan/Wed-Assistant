@@ -1,0 +1,7 @@
+{
+    "navigationBarBackgroundColor": "#FF4463",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "通信录",
+    "backgroundTextStyle": "light",
+    "disableScroll":true
+}
