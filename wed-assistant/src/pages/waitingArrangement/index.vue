@@ -17,7 +17,7 @@
                             <div class="people-list">
                                 <div class="people-num">
                                     <div class="people-left">
-                                        <div class="dat"></div>
+                                        <div class="dat" :style="{backgroundColor : randomColorArr[p_sub]}"></div>
                                         <div class="name"><text>{{pItem.name}}</text></div>
                                     </div>
                                     <div class="num-edit">
@@ -80,10 +80,31 @@ export default {
             number:0,
             real_number:0,
             people:[],
-            sid:''
+            sid:'',
+            colorArr: ["#EE2C2C", "#ff7070", "#EEC900", "#4876FF", "#ff6100",
+                "#7DC67D", "#E17572", "#7898AA", "#C35CFF", "#33BCBA", "#C28F5C",
+                "#FF8533", "#6E6E6E", "#428BCA", "#5cb85c", "#FF674F", "#E9967A",
+                "#66CDAA", "#00CED1", "#9F79EE", "#CD3333", "#FFC125", "#32CD32",
+                "#00BFFF", "#68A2D5", "#FF69B4", "#DB7093", "#CD3278", "#607B8B"
+            ],
+            randomColorArr: [],
         }
     },
     methods:{
+        colorRandom:function(){
+            let that = this,
+                labLen = that.people.length,
+                colorArr = that.colorArr,
+                colorLen = colorArr.length,
+                randomColorArr = [];
+            //判断执行
+            do {
+                let random = colorArr[Math.floor(Math.random() * colorLen)];
+                randomColorArr.push(random);
+                labLen--;
+            } while (labLen > 0)
+            this.randomColorArr=randomColorArr;      
+        },
         navPeopleList:function(e){
             let sid=this.sid;
             swan.navigateTo({
@@ -207,6 +228,7 @@ export default {
                     sid=res.data.sid;
                     this.people=people;
                     this.number=number;
+                    this.colorRandom()
                 },
                 fail:function(err){console.log(err)},
             })
@@ -227,7 +249,7 @@ export default {
         store.commit('setPeople',[])
         this.addPeople=[];
         this.people=people;
-        
+        this.colorRandom()
     }
 }
 </script>

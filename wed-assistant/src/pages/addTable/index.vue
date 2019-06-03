@@ -170,9 +170,6 @@ export default {
                 },
             })
         },
-        // setDeskName: function (e) {
-        //     this.deskName=e.mp.detail.value;
-        // },
         takeAlongNumber: function (e) { //设置座位
             let people = this.people;
             let seating = e.currentTarget.dataset.seating;
