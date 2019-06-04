@@ -8,7 +8,7 @@ function getTimestamp() { //获取时间戳
     return ts;
 }
 function getSign(data, sid) {
-    if(sid!==''){
+    if(sid){
         data.sid=sid
     }
     let obj={};
