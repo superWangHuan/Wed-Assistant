@@ -1,6 +1,4 @@
 <script>
-import { getSign } from './utils/getData.js';
-import { wed_url } from './utils/wed_url.js'
 export default {
   created () {
     // 调用API从本地缓存中获取数据
