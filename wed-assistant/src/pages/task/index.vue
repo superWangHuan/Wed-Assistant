@@ -100,7 +100,7 @@
                                 <scroll-view scroll-y="true">
                                     <div class="task-list-box">
                                         <div class="task-item-class">
-                                            <div class="task-item-title"><text>完成的任务</text></div>
+                                            <!-- <div class="task-item-title"><text>完成的任务</text></div> -->
 
                                             <div v-for="(fulfil,index) in taskList.fulfil" :key="index">
                                                 <div class="task-item">

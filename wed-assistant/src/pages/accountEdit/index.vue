@@ -198,6 +198,7 @@ export default {
             swan.chooseImage({
                 count: 1,
                 success: (res) => {
+                    console.log('chooseImage',res)
                     swan.showLoading({
                         title: "上传中...",
                     })

@@ -15,7 +15,7 @@
 .cut-btn{
      width:85%;
      height:100%;
-     background:rgb(255,255,255,.7);
+     background:rgba(255,255,255,.7);
      margin:0 auto;
      border-top-right-radius: 10rpx;
      border-top-left-radius: 10rpx;

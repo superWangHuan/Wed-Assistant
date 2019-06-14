@@ -30,4 +30,4 @@ function getSign(data, sid) {
     data=obj;
     return data;
 }
-export {getSign,api_url}
+export {getSign}

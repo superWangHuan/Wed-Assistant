@@ -367,7 +367,7 @@ export default {
                 if (pageY <= 0) {
                     pageY = 15
                 }
-                let sub = Math.ceil((scrollTop + pageY + 30) / (scrollPosition.everyOptionCell)) - 1; //获取数据的下标
+                let sub = Math.ceil((scrollTop + pageY + 85) / (scrollPosition.everyOptionCell)) - 1; //获取数据的下标
                 let deskPeople = this.peopleListsCopy.lists[sub]; //获取当前移动的数据
                 if (!deskPeople.id) {
                     this.m_isShow=true;

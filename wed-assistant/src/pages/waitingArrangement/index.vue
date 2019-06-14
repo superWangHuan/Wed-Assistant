@@ -236,6 +236,9 @@ export default {
     },
     onLoad: function (options) {
         // 监听页面加载的生命周期函数
+        swan.setNavigationBarTitle({
+            title:'待安排'
+        })
         this.sid=options.sid;
     },
     mounted: function() {

@@ -199,7 +199,7 @@
                         console.log('登录',res.data.data);
                         
                         this.sid = res.data.sid;         
-                        let msg = res.data.message;
+                        let msg= res.data.message;
                         let status = res.data.status;
                         // this.avatar='https:'+res.data.data.avatar;
                         this.getWedinfo();//获取个人信息
@@ -511,7 +511,10 @@
                 setInterval(()=>{this.invitations();this.partnerInfo()},5000);
             }
         },
-        onLoad(){
+        onLoad(options){
+            if(options.sid){
+                this.sid=sid;
+            };
             this.login()
         },
         mounted(){

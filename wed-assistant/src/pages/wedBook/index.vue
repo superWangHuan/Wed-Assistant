@@ -42,7 +42,7 @@
                                                     <div class="item-imgs">
                                                         <div v-for="(photo,p_sub) in ditem.photo" :key="p_sub">
                                                             <div class="img">
-                                                                <image :src="photo" :data-urls="ditem.photo" :data-url="photo" @click="predivImage"></image>
+                                                                <image :src="photo" :data-urls="ditem.photo" :data-url="photo" @click="previewImage"></image>
                                                             </div>                                            
                                                         </div>
                                                     </div>                                    
@@ -62,7 +62,7 @@
                                                             <div class="item-imgs">
                                                                 <div v-for="(photo,p_sub) in clitem.photo" :key="p_sub">
                                                                     <div class="img">
-                                                                        <image :src="photo" :data-urls="clitem.photo" :data-url="photo" @click="predivImage"></image>
+                                                                        <image :src="photo" :data-urls="clitem.photo" :data-url="photo" @click="previewImage"></image>
                                                                     </div>                                            
                                                                 </div>
                                                             </div>                                    
@@ -139,20 +139,20 @@ export default {
     },
     methods:{
         previewImage:function(e){//预览图片
-            var url=e.currentTarget.dataset.url
-            var urls=e.currentTarget.dataset.urls
+            let url=e.currentTarget.dataset.url
+            let urls=e.currentTarget.dataset.urls
             swan.previewImage({
                 current:url,
                 urls:urls,
-                success:function(){},
+                success:function(res){console.log(res)},
                 fail:function(err){console.log(err)},
                 complete:function(){},
             })
         },
         navdetail:function(e){
-            var id=e.currentTarget.dataset.id;
-            var judeg=this.judeg;
-            var key=this.sid;
+            let id=e.currentTarget.dataset.id;
+            let judeg=this.judeg;
+            let key=this.sid;
             swan.navigateTo({
                 url:"../accountEdit/main?sid="+key+"&aid="+id+"&judeg="+judeg
             })
